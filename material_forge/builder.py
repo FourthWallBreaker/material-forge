@@ -215,6 +215,10 @@ def _apply_params(node, params):
 
         prop = node.bl_rna.properties.get(key)
         if prop is None:
+            socket = node_lib.find_socket(node.inputs, key)
+            if socket is not None:
+                _set_socket_value(socket, value, f"{node.bl_idname}.{key}")
+                continue
             raise BuildError(f"{node.bl_idname}: no property {key!r}")
         try:
             setattr(node, key, value)
