@@ -1,0 +1,16 @@
+schema_version = "1.0.0"
+
+id = "material_forge"
+version = "0.2.0"
+name = "Material Forge"
+tagline = "Procedural shader materials from a text prompt"
+maintainer = "Iban"
+type = "add-on"
+
+# Blender 4.2 introduced the extensions system; Material Forge works on 5.x.
+blender_version_min = "4.2.0"
+
+license = ["SPDX:GPL-3.0-or-later"]
+tags = ["Material", "Shader", "Procedural"]
+
+website = "https://github.com/iban/material-forge"
