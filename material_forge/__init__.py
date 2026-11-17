@@ -7,7 +7,7 @@ is used as a fallback for anything the vocabulary doesn't know.
 bl_info = {
     "name": "Material Forge",
     "author": "AI-1",
-    "version": (0, 2, 0),
+    "version": (0, 3, 1),
     "blender": (5, 0, 0),
     "location": "3D Viewport > Sidebar > Forge",
     "description": "Generate procedural shader node graphs from a prompt",
